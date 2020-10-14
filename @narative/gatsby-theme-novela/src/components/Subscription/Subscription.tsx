@@ -43,7 +43,7 @@ const Subscription: React.FC<{}> = () => {
       <SubscriptionContainer>
         <Content>
           <Heading>
-            Sign up to my email list for updates
+            This is a testing 123...
           </Heading>
           <Text>
             Be the first to receive my latest updates. No spam or share your

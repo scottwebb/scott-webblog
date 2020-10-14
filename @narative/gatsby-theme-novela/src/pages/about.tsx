@@ -9,7 +9,7 @@ import Layout from "@components/Layout";
 
 import { Template } from "@types";
 
-const image = '/trong-avatar.jpg';
+const image = '/scott-webb-photographer.jpg';
 
 const AboutPage: Template = ({ location, pageContext }) => {
 
@@ -23,22 +23,22 @@ const AboutPage: Template = ({ location, pageContext }) => {
       </Section>
       <Section>
         <ContentContainer>
-          <MyImage><Image src={image} /></MyImage>
+          <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
           <MyText>
             <InfoHeading>
-              Born and raised in a small village in Viet Nam, been hard at work since 2013.
+            Hi! I’m Scott Webb, a proud London Ontario Photographer with a love for architecture.
             </InfoHeading>
             <InfoText>
-              Trong is a Singapore-Based Product Designer, currently building Carousell classified marketplace that inspires people to start to sell and buy.
+            Instead of telling you I grew up with a camera in my hands, I was more interested in being an architect. I graduated from Ryerson University with a Bachelor of Architecture, but I found myself even more fascinated with photographing built projects as digital cameras began to enter the marketplace.
             </InfoText>
             <InfoText>
-              Previously, he built the e-commerce Leflair Viet Nam, an online retailer that focuses on beauty, fashion and home living products.
+            I help raise the bar of the photography of architecture and the city. I work with top architectural studios in London, but I also give away images of London for anyone to download and use for anything such as blogging, websites, social media, print.
             </InfoText>
             <InfoText>
-              He spent 5 years in a tech university to learn IT, but he soon realized design is his passion. He hated coding, but his gut told him to finish the engineering diploma while learning to design in his free time. And when he met the UX term, basic knowledge in IT became an important foundation in his career.
+            As a [London Ontario Architectural Photographer](https://www.scottwebb.me/), it’s a blessing to be able to help showcase the buildings and spaces clients have successfully completed in the real world. With the fact most people experience architecture through visual content, it’s a mission of mine to help visually spread the positive impact of the amazing London architecture amongst Londoners and the world.
             </InfoText>
             <InfoText>
-              One of the greatest things about being a designer with an engineering background is that not only he can take care of the graphical aspects of a project, but can also fully understand, participate and even take care of the technical aspects of those projects.
+            I know the architecture niche. It’s so natural and comes out in my photography.
             </InfoText>
           </MyText>
         </ContentContainer>
@@ -111,7 +111,7 @@ const ContentContainer = styled.div`
 const InfoHeading = styled.h1`
   font-weight: 600;
   font-family: ${p => p.theme.fonts.title};
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.35;
   max-width: 100%;
   margin-bottom: 32px;
@@ -145,6 +145,7 @@ const MyImage = styled.div`
     height: 100%;
     object-fit: cover;
     object-position: center;
+    background: #fff;
 
   }
 `;

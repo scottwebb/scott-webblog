@@ -87,7 +87,7 @@ const Article: Template = ({ pageContext, location }) => {
       {mailchimp && article.subscription && <Subscription />}
       {next.length > 0 && (
         <NextArticle narrow>
-          <FooterNext>More from {name}</FooterNext>
+          <FooterNext>Enjoy more from {name}</FooterNext>
           <ArticlesNext articles={next} />
           <FooterSpacer />
         </NextArticle>

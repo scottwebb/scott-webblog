@@ -53,7 +53,7 @@ const Footer: React.FC<{}> = () => {
         <HoritzontalRule />
         <FooterContainer>
           <FooterText>
-            © {copyrightDate} {name}
+            © {copyrightDate} {name} Photography | London, Ontario.
           </FooterText>
           <div>
             <SocialLinks links={social} />

@@ -14,9 +14,9 @@ const breakpoints = [
 ];
 
 const fonts = {
-  title: "'Poppins', 'Helvetica Neue', 'Arial', sans-serif",
-  body:
-    "'Libre Baskerville', Georgia, Serif",
+  serif: "'Merriweather', Georgia, Serif",
+  sansSerif:
+    "'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Ubuntu', 'Roboto', 'Noto', 'Segoe UI', 'Arial', sans-serif",
   monospace: `"Operator Mono", Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace`,
 };
 

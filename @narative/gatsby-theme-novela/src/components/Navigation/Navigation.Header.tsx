@@ -91,7 +91,7 @@ const NavigationHeader: React.FC<{}> = () => {
         </LogoLink>
         <NavControls>
           <NavLink to={`/writing`} title={`All articles`} activeClassName="active" >
-            Writing
+            Blog
           </NavLink>
           <NavLink to={`/about`} title={`About me`} activeClassName="active" >
             About

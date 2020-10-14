@@ -1,3 +1,15 @@
+- name: Scott Webb
+  bio: |
+    I eat far too many skittles.
+  avatar: ./avatars/scott-webb-avatar-20.png
+  featured: true
+  social:
+    - url: https://twitter.com/scotty_webb
+    - url: https://facebook.com/scottwebbphotography
+    - url: https://instagram.com/scottwebb
+    - url: https://unsplash.com/@scottwebb
+    - url: https://linkedin.com/in/thescottwebb/
+
 - name: Trong Nguyen
   bio: |
     Write to practice. Write to find ideas

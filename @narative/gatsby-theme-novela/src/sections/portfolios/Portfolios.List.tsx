@@ -115,7 +115,7 @@ const ListItem: React.FC<ArticlesListItemProps> = ({ article, narrow }) => {
           >
             {article.excerpt}
           </Excerpt>
-          <SeeMore>View gallery →</SeeMore>
+          <SeeMore>View the full gallery →</SeeMore>
         </TextContainer>
         <ContentContainer>
         </ContentContainer>
@@ -259,13 +259,17 @@ const ImageContainer = styled.div<{ narrow: boolean; gridLayout: string }>`
 
 const TextContainer = styled.div`
   position: relative;
+  width: 555px;
   display: inline-block;
   left: 0;
   top: 0;
   padding: 48px 40px;
+  background-color: #fafafa;
+
 
   ${mediaqueries.phablet`
     padding: 40px 32px;
+    width: 360px;
   `}
 `;
 

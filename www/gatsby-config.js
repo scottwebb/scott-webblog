@@ -3,7 +3,7 @@ require("dotenv").config();
 const siteMetadata = {
   title: `Scott Webb Photography`,
   name: `Scott Webb`,
-  siteUrl: `https://trongnguyen.co`,
+  siteUrl: `https://wwww.scottwebb.me`,
   description: `London Ontario Architectural Photographer creating beautiful architectural photography for architects, designers, developers.`,
   hero: {
     heading: `An Architectural Photographer for visionary studios & firms doing remarkable work in London and Southwestern Ontario`,
@@ -17,11 +17,11 @@ const siteMetadata = {
     },
     {
       name: `facebook`,
-      url: `https://www.facebook.com/Scott.r.Webb`,
+      url: `https://www.facebook.com/scottwebbphotography`,
     },
     {
       name: `instagram`,
-      url: `https://instagram.com/skot.bot`,
+      url: `https://instagram.com/scottwebb`,
     },
     {
       name: `linkedin`,

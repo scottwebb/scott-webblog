@@ -8,6 +8,7 @@ import Image from '@components/Image';
 import Layout from "@components/Layout";
 
 import { Template } from "@types";
+import { Link } from "gatsby";
 
 const image = '/scott-webb-photographer.jpg';
 
@@ -29,13 +30,13 @@ const AboutPage: Template = ({ location, pageContext }) => {
             Hi! I’m Scott Webb, a proud London Ontario Photographer with a love for architecture.
             </InfoHeading>
             <InfoText>
-            Instead of telling you I grew up with a camera in my hands, I was more interested in being an architect. I graduated from Ryerson University with a Bachelor of Architecture, but I found myself even more fascinated with photographing built projects as digital cameras began to enter the marketplace.
+            Instead of telling you I grew up with a camera in my hands, I was more interested in being an architect. I graduated from Ryerson University with a Bachelor of Architecture, but I found myself even more fascinated with photographing buildings as digital cameras began to enter the marketplace.
             </InfoText>
             <InfoText>
-            I help raise the bar of the photography of architecture and the city. I work with top architectural studios in London, but I also give away images of London for anyone to download and use for anything such as blogging, websites, social media, print.
+            I help raise the bar of the photography of architecture and the city. I work with top architectural firmms in London, but I also give away images of London for anyone to download and use for anything such as blogging, websites, social media, print.
             </InfoText>
             <InfoText>
-            As a [London Ontario Architectural Photographer](https://www.scottwebb.me/), it’s a blessing to be able to help showcase the buildings and spaces clients have successfully completed in the real world. With the fact most people experience architecture through visual content, it’s a mission of mine to help visually spread the positive impact of the amazing London architecture amongst Londoners and the world.
+            As a <Link to='/'>London Ontario Architectural Photographer</Link>, it’s a blessing to be able to help showcase the buildings and spaces clients have successfully completed. Since most people experience architecture through visual content, it’s my mission to help visually spread the positive impact of the amazing architecture amongst Londoners and the world.
             </InfoText>
             <InfoText>
             I know the architecture niche. It’s so natural and comes out in my photography.
@@ -61,6 +62,8 @@ const ArticlesGradient = styled.div`
   background: ${p => p.theme.colors.gradient};
   transition: ${p => p.theme.colorModeTransition};
 `;
+
+
 
 const HeadingContainer = styled.div`
   margin: 100px 0;
@@ -117,6 +120,8 @@ const InfoHeading = styled.h1`
   margin-bottom: 32px;
   color: ${p => p.theme.colors.primary};
 
+ 
+
   ${mediaqueries.phablet`
     font-size: 24px;
   `}
@@ -127,7 +132,19 @@ const InfoText = styled.p`
   margin-top: 24px;
   line-height: 1.7;
   color: ${p => p.theme.colors.primary};
+
+  a {
+    color: ${p => p.theme.colors.primary};
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: ${p => p.theme.colors.accent};
+  } 
+
 `;
+
+
 
 const MyText = styled.div`
   position: relative;
@@ -138,7 +155,7 @@ const MyImage = styled.div`
   display: block;
   width: 100%;
   box-shadow: 0 22px 44px 0 rgba(0,0,0,0.22);
-  margin-bottom: 56px;
+  margin-bottom: 5px;
 
   img {
     width: 100%;

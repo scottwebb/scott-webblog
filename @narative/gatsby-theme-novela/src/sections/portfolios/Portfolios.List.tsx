@@ -115,7 +115,7 @@ const ListItem: React.FC<ArticlesListItemProps> = ({ article, narrow }) => {
           >
             {article.excerpt}
           </Excerpt>
-          <SeeMore>Read case study →</SeeMore>
+          <SeeMore>View gallery →</SeeMore>
         </TextContainer>
         <ContentContainer>
         </ContentContainer>
@@ -258,7 +258,8 @@ const ImageContainer = styled.div<{ narrow: boolean; gridLayout: string }>`
 `;
 
 const TextContainer = styled.div`
-  position: absolute;
+  position: relative;
+  display: inline-block;
   left: 0;
   top: 0;
   padding: 48px 40px;
@@ -358,14 +359,27 @@ const ArticleLink = styled(Link)`
   transition: transform 0.33s var(--ease-out-quart);
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 
-  &::after, &::before {
+  &::before {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 0px;
+    left: 50%;
+    position: absolute;
+    background: ${p => p.theme.colors.accent};
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    z-index: 1;
+  }
+
+  &::after {
     background: none repeat scroll 0 0 transparent;
     content: "";
     display: block;
     height: 4px;
     left: 50%;
     position: absolute;
-    background: ${p => p.theme.colors.secondary};
+    background: ${p => p.theme.colors.accent};
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
     z-index: 1;

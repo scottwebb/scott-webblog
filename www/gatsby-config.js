@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const siteMetadata = {
-  title: `Scott Webb Photography`,
+  title: `Scott Webb Photography | London Ontario Architectural Photographer`,
   name: `Scott Webb`,
   siteUrl: `https://wwww.scottwebb.me`,
   description: `London Ontario Architectural Photographer creating beautiful architectural photography for architects, designers, developers.`,

@@ -87,6 +87,7 @@ const Article: Template = ({ pageContext, location }) => {
         <MDXRenderer content={portfolio.body}>
         </MDXRenderer>
       </ArticleBody>
+      
     </Layout>
   );
 };

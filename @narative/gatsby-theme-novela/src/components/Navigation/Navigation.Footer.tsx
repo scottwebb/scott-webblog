@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
-
+import Image from '@components/Image';
 import Section from "@components/Section";
 import SocialLinks from "@components/SocialLinks";
 
 import mediaqueries from "@styles/media";
+
+const image = '/scott-webb-photographer.jpg';
 
 const siteQuery = graphql`
   {
@@ -51,6 +53,13 @@ const Footer: React.FC<{}> = () => {
       <FooterGradient />
       <Section narrow>
         <HoritzontalRule />
+        
+        <ContentContainer>
+          <MyImage><a href="/"><Image src={image} alt="Scott Webb, Photographer"/></a></MyImage>
+          <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
+          <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
+        </ContentContainer>
+      
         <FooterContainer>
           <FooterText>
             © {copyrightDate} {name} Photography | London, Ontario.
@@ -84,6 +93,7 @@ const FooterContainer = styled.div`
   `}
 `;
 
+
 const HoritzontalRule = styled.div`
   position: relative;
   margin: 80px auto 32px;
@@ -95,6 +105,19 @@ const HoritzontalRule = styled.div`
 
   ${mediaqueries.phablet`
     display: none;
+  `}
+`;
+
+const ContentContainer = styled.div`
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 56px;
+  padding: 2rem 0 4rem 0;
+  z-index: 1;
+
+  ${mediaqueries.desktop`
+    grid-template-columns: 1fr;
   `}
 `;
 
@@ -118,4 +141,21 @@ const FooterGradient = styled.div`
   pointer-events: none;
   background: ${p => p.theme.colors.gradient};
   transition: ${p => p.theme.colorModeTransition};
+`;
+
+const MyImage = styled.div`
+  position: relative;
+  display: block;
+  width: 100%;
+  box-shadow: 0 22px 44px 0 rgba(0,0,0,0.22);
+  margin-bottom: 5px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: #fff;
+
+  }
 `;

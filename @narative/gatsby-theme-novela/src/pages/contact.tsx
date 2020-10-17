@@ -26,21 +26,20 @@ const AboutPage: Template = ({ location, pageContext }) => {
         <ContentContainer>
           <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
           <MyText>
-            <InfoHeading>
-            Hi! I’m Scott Webb, a proud London Ontario Photographer with a love for architecture.
-            </InfoHeading>
-            <InfoText>
-            Instead of telling you I grew up with a camera in my hands, I was more interested in being an architect. I graduated from Ryerson University with a Bachelor of Architecture, but I found myself even more fascinated with photographing buildings as digital cameras began to enter the marketplace.
-            </InfoText>
-            <InfoText>
-            I help raise the bar of the photography of architecture and the city. I work with top architectural firms in London, but I also give away images of London for anyone to download and use for anything such as blogging, websites, social media, print.
-            </InfoText>
-            <InfoText>
-            As a <Link to='/'>London Ontario Architectural Photographer</Link>, it’s a blessing to be able to help showcase the buildings and spaces clients have successfully completed. Since most people experience architecture through visual content, it’s my mission to help visually spread the positive impact of the amazing architecture amongst Londoners and the world.
-            </InfoText>
-            <InfoText>
-            I know the architecture niche. It’s so natural and comes out in my photography.
-            </InfoText>
+          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" placeholder="Your Email" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
           </MyText>
         </ContentContainer>
       </Section>

@@ -5,6 +5,9 @@ import { graphql, useStaticQuery } from "gatsby";
 import PortfoliosHero from "../sections/portfolios/Portfolios.Hero";
 import Section from "@components/Section";
 import SEO from "@components/SEO";
+
+import mediaqueries from "@styles/media";
+import Image from '@components/Image';
 import Layout from "@components/Layout";
 import Paginator from "@components/Navigation/Navigation.Paginator";
 
@@ -26,6 +29,8 @@ const siteQuery = graphql`
   }
 `;
 
+const image = '/architectural-photographer-london-ontario-portfolioHero-1.jpg';
+
 const PortfoliosPage: Template = ({ location, pageContext }) => {
   const portfolio = pageContext.group;
   const authors = pageContext.additionalContext.authors;
@@ -39,12 +44,31 @@ const PortfoliosPage: Template = ({ location, pageContext }) => {
         pathname={location.pathname}
         title={name}
       />
+      
       <PortfoliosHero authors={authors} />
       <Section narrow>
+        <ImageContainerHome>
+      <Image src={image} title="Architectural Photographer, Scott Webb Photography" alt="Scott Webb Photography, Architectural Photographer in London Ontario Canada"></Image>
+      <SidekickText>
+        <h2>
+        Scott Webb Photography helps architects, designers, engineers, builders, developers and other businesses to elevate the experience of built projects through creative and authentic architectural photography
+        </h2>
+        </SidekickText>
+      </ImageContainerHome>
         <PortfolioList articles={portfolio} />
         <ArticlesPaginator show={pageContext.pageCount > 1}>
           <Paginator {...pageContext} />
         </ArticlesPaginator>
+        <SidekickText_B>
+        <h3>
+        Your built work is invaluable; it represents a considerable time and energy investment. I understand your niche and desire to capture beautiful spaces making incredible impacts in the built environment around London Ontario.
+      </h3>
+        
+        </SidekickText_B>
+        <SidekickText_C>
+        <h4><a href="/contact/">Contact Scott →</a>
+</h4>
+        </SidekickText_C>
       </Section>
       <ArticlesGradient />
     </Layout>
@@ -52,6 +76,7 @@ const PortfoliosPage: Template = ({ location, pageContext }) => {
 };
 
 export default PortfoliosPage;
+
 
 const ArticlesGradient = styled.div`
   position: absolute;
@@ -67,4 +92,109 @@ const ArticlesGradient = styled.div`
 
 const ArticlesPaginator = styled.div<{ show: boolean }>`
   ${p => p.show && `margin-top: 64px;`}
+`;
+
+const ImageContainerHome = styled.div`
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 75px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
+
+  }
+`;
+
+const SidekickText = styled.div`
+position: relative;
+font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.1;
+  color: ${p => p.theme.colors.primary};
+width: 100%;
+display: block;
+text-align: right;
+padding: 10rem 0px 3rem 12rem;
+
+h4 {
+  padding: 2rem 0;
+}
+
+  a {
+    color: ${p => p.theme.colors.primary};
+    text-decoration: underline;
+  }
+
+  ${mediaqueries.desktop`
+    font-size: 30px
+  `}
+
+  ${mediaqueries.phablet`
+    font-size: 22px;
+  `}
+`;
+
+const SidekickText_B = styled.div`
+position: relative;
+font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.1;
+  color: ${p => p.theme.colors.primary};
+width: 100%;
+display: block;
+padding: 10rem 0 4rem 0;
+text-align: left;
+
+
+
+  a {
+    color: ${p => p.theme.colors.accent};
+  }
+
+  ${mediaqueries.desktop`
+    font-size: 30px
+  `}
+
+  ${mediaqueries.phablet`
+    font-size: 22px;
+  `}
+`;
+
+const SidekickText_C = styled.div`
+position: relative;
+font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.1;
+  color: ${p => p.theme.colors.primary};
+width: 100%;
+display: block;
+padding: 4rem 0 4rem 0;
+text-align: left;
+
+
+
+  a {
+    color: ${p => p.theme.colors.primary};
+    text-decoration: underline;
+  }
+  a:hover {
+    color: ${p => p.theme.colors.accent};
+    text-decoration: underline;
+  }
+
+  ${mediaqueries.desktop`
+    font-size: 24px
+  `}
+
+  ${mediaqueries.phablet`
+    font-size: 20px;
+  `}
 `;

@@ -258,16 +258,15 @@ const ImageContainer = styled.div<{ narrow: boolean; gridLayout: string }>`
 `;
 
 const TextContainer = styled.div`
-  position: relative;
-  width: 555px;
-  display: inline-block;
+  position: absolute;
+  
   left: 0;
-  top: 0;
+  top: 450px;
   padding: 48px 40px;
-  background-color: #fafafa;
 
 
   ${mediaqueries.phablet`
+  top: 275px;
     padding: 40px 32px;
     width: 360px;
   `}
@@ -280,7 +279,7 @@ const ContentContainer = styled.div`
 const Title = styled(Headings.h2)`
   font-size: 28px;
   font-family: ${p => p.theme.fonts.title};
-  color: #111111;
+  color: #fff;
   opacity: .8;
   margin-bottom: ${p =>
     p.hasOverflow && p.gridLayout === 'tiles' ? '35px' : '16px'};
@@ -310,7 +309,7 @@ const Excerpt = styled.p<{
   ${limitToTwoLines};
   font-size: 14px;
   margin-bottom: 10px;
-  color: #111111;
+  color: #fff;
   opacity: .7;
   font-family: ${p => p.theme.fonts.body};
   display: ${p => (p.hasOverflow && p.gridLayout === 'tiles' ? 'none' : 'box')};
@@ -334,10 +333,11 @@ const Excerpt = styled.p<{
 
 const SeeMore = styled.div`
   font-size: 14px;
-  color: #111111;
+  color: #fff;
   font-family: ${p => p.theme.fonts.title};
   margin-top: 8px;
   opacity: .8;
+  font-weight: 600;
 `;
 
 const MetaData = styled.div`
@@ -363,20 +363,7 @@ const ArticleLink = styled(Link)`
   transition: transform 0.33s var(--ease-out-quart);
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 
-  &::before {
-    background: none repeat scroll 0 0 transparent;
-    content: "";
-    display: block;
-    height: 0px;
-    left: 50%;
-    position: absolute;
-    background: ${p => p.theme.colors.accent};
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-    z-index: 1;
-  }
-
-  &::after {
+  &::after, &::before {
     background: none repeat scroll 0 0 transparent;
     content: "";
     display: block;

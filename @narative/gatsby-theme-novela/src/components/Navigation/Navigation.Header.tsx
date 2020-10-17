@@ -148,7 +148,7 @@ const NavLink = styled(Link)`
   font-weight: bold;
   font-family: ${p => p.theme.fonts.title};
   font-size: 14px;
-  color: ${p => p.theme.colors.secondary};
+  color: ${p => p.theme.colors.primary};
   transition: color 0.25s var(--ease-in-out-quad);
   display: inline-block;
   position: relative;

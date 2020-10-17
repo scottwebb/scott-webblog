@@ -214,7 +214,7 @@ const InfoText = styled.p`
   font-size: 16px;
   margin-top: 24px;
   line-height: 1.7;
-  color: ${p => p.theme.colors.primary};
+  color: ${p => p.theme.colors.grey};
 
   a {
     color: ${p => p.theme.colors.primary};

@@ -18,15 +18,17 @@ const AboutPage: Template = ({ location, pageContext }) => {
       <SEO pathname={location.pathname} title={"About Photographer, Scott Webb"}/>
       <Section relative>
         <HeadingContainer>
-          <HeroHeading>About Scott</HeroHeading>
+          <HeroHeading>Contact Scott</HeroHeading>
         </HeadingContainer>
       </Section>
       <Section>
         <ContentContainer>
           <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
+          
           <MyText>
+          <InfoText>
+          Please feel free to contact me to say hi, ask a question, or request pricing for a project. Please provide as much detail as you can. The best way to get a hold of me is via <b>email: hello@scottwebb.me</b>, but you can also reach me by text/phone: 519.200.2792 or the contact form provided below. I'll get back to you as soon as possible.           </InfoText>
           <div>
-        <h1>Contact</h1>
         <form
           name="contact"
           method="post"
@@ -68,63 +70,7 @@ const AboutPage: Template = ({ location, pageContext }) => {
           </MyText>
         </ContentContainer>
       </Section>
-      <Section>
-        <ContentContainer_b>
-          <MyText>
-          <HeadingContainer>
-          <HeroHeading>Clients</HeroHeading>
-        </HeadingContainer>
-            <InfoText>
-            <li>
-              City of London
-            </li>
-            <li>
-              Cornerstone Architecture Inc.
-            </li>
-            <li>
-              Nicholson Sheffield Architects Inc.
-            </li>
-            <li>
-              architects Tillmann Ruth Robinson
-            </li>
-            <li>
-              Matter Architectural Studio Inc.
-            </li>
-            <li>
-              Abbott Building Systems
-            </li>
-            <li>
-              Grassmere Construction Ltd.
-            </li>
-            <li>
-              OLD OAK
-            </li>
-            <li>
-              EDGE Architects Ltd.
-            </li>
-            <li>
-              Architectural Conservancy Ontario - London
-            </li>
-            <li>
-              Goodwill Industries
-            </li>
-            <li>
-              The Tricar Group
-            </li>
-            <li>
-              Zedd Architecture Inc.
-            </li>
-            </InfoText>
-          
-          </MyText>
-          <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
-        </ContentContainer_b>
-      </Section>
-      <Section>
-        <ContentContainer_c>
-        <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
-        </ContentContainer_c>
-      </Section>
+      
       <ArticlesGradient />
     </Layout>
   );
@@ -237,8 +183,9 @@ const InfoHeading = styled.h1`
 const InfoText = styled.p`
   font-size: 16px;
   margin-top: 24px;
+  margin-bottom: 50px;
   line-height: 1.7;
-  color: ${p => p.theme.colors.primary};
+  color: ${p => p.theme.colors.grey};
 
   a {
     color: ${p => p.theme.colors.primary};
@@ -249,6 +196,7 @@ const InfoText = styled.p`
     color: ${p => p.theme.colors.accent};
   } 
 
+
 `;
 
 
@@ -256,6 +204,36 @@ const InfoText = styled.p`
 const MyText = styled.div`
   position: relative;
   padding-bottom: 50px;
+
+  button {
+      color: #fff;
+      background: #000;
+      padding: 14px 40px;
+      width: 100%;
+      border-radius: 3px;
+      margin-top: 30px;
+  }
+
+  button:hover {
+      background-color: #56c843;
+  }
+
+  input, textarea {
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    border-color: #ddd;
+    border-width: 0;
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 14px 0;
+  }
+
+  p {
+    color: ${p => p.theme.colors.grey};
+  }
 `;
 
 const MyImage = styled.div`

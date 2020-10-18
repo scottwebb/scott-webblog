@@ -99,9 +99,7 @@ const NavigationHeader: React.FC<{}> = () => {
           <NavLink to={`/`} title={`View Portfolio`} activeClassName="active" >
             Portfolio
           </NavLink>
-          <NavLink to={`/contact`} title={`Contact Scott`} activeClassName="active" >
-            Contact
-          </NavLink>
+          
           <DarkModeToggle />
         </NavControls>
       </NavContainer>
@@ -156,6 +154,7 @@ const NavLink = styled(Link)`
 
   ${mediaqueries.phone`
     margin-left: 32px;
+    font-size: 9px;
   `}
 
   &::after {

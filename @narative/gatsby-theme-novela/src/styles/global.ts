@@ -136,7 +136,16 @@ export const globalStyles = css`
     }
   }
 
+  video {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+  }
+
   img.Image__Zoom ~ div {
     background: transparent !important;
   }
 `;
+

@@ -6,7 +6,7 @@ import { MDXProvider } from "@mdx-js/react";
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 import { useColorMode } from "theme-ui";
-
+import ResponsivePlayer from "@components/Video/ResponsivePlayer";
 import Anchor from "@components/Anchor";
 import Blockquote from "@components/Blockquote";
 import Code from "@components/Code";
@@ -209,6 +209,9 @@ const PrismCSS = p => css`
   }
 `;
 
+
+
+
 const ImageCSS = css`
   .gatsby-resp-image-background-image {
     display: none !important;
@@ -226,6 +229,14 @@ const ImageCSS = css`
       margin: 10px auto 45px;
     `};
   }
+
+  div.video {
+  width: 100%;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
 
   div.Image__Small {
     display: inline-block;

@@ -7,6 +7,7 @@ import SEO from "@components/SEO";
 import Image from '@components/Image';
 import Layout from "@components/Layout";
 
+import ResponsivePlayer from "@components/Video/ResponsivePlayer";
 import { Template } from "@types";
 import { Link } from "gatsby";
 
@@ -98,7 +99,7 @@ const AboutPage: Template = ({ location, pageContext }) => {
       </Section>
       <Section>
         <ContentContainer_c>
-        <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
+        <ResponsivePlayer url="https://cdn.dribbble.com/users/43342/screenshots/14154626/media/3e370f2b0684713d2bd0f60e312a4057.mp4" />
         </ContentContainer_c>
       </Section>
       <ArticlesGradient />

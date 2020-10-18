@@ -36,7 +36,7 @@ const Hero = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 48px auto 32px;
+  margin: 48px auto 60px;
 `;
 
 const HeroImage = styled.div`

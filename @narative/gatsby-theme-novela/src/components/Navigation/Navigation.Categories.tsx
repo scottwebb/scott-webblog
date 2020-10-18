@@ -14,8 +14,8 @@ const NavCategory = ({ category }) => {
           <NavLink to={`/categories/showcase`} title={`Showcase category`} activeClassName="active" >
           Showcase
           </NavLink>
-          <NavLink to={`/categories/lavida`} title={`Lavida category`} activeClassName="active" >
-          LaVida
+          <NavLink to={`/categories/unsplsh`} title={`Unsplash category`} activeClassName="active" >
+          Unsplash
           </NavLink>
       </NavControls>
     </NavContainer>

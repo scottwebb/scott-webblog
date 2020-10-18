@@ -2,7 +2,6 @@ import React, { useRef, useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import throttle from "lodash/throttle";
 import { graphql, useStaticQuery } from "gatsby";
-
 import Layout from "@components/Layout";
 import MDXRenderer from "@components/MDX";
 import Section from "@components/Section";

@@ -180,6 +180,11 @@ const ContentContainer_b = styled.div`
   ${mediaqueries.desktop`
     grid-template-columns: 1fr;
   `}
+
+
+${mediaqueries.phablet`
+    margin-top: 10px;
+  `}
 `;
 
 const ContentContainer_c = styled.div`
@@ -208,6 +213,7 @@ const InfoHeading = styled.h1`
 
   ${mediaqueries.phablet`
     font-size: 24px;
+    margin-top: 45px
   `}
 `;
 

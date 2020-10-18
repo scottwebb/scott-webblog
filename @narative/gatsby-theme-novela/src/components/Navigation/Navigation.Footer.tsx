@@ -62,7 +62,7 @@ const Footer: React.FC<{}> = () => {
       
         <FooterContainer>
           <FooterText>
-            © {copyrightDate} {name} Photography | London, Ontario.
+            © {copyrightDate} {name} Photography // <a href="/contact">Contact Info</a>
           </FooterText>
           <div>
             <SocialLinks links={social} />
@@ -122,6 +122,17 @@ const ContentContainer = styled.div`
 `;
 
 const FooterText = styled.div`
+
+a {
+  color: ${p => p.theme.colors.primary};
+  font-weight: 800;
+}
+
+a:hover {
+  color: ${p => p.theme.colors.accent};
+
+}
+
   ${mediaqueries.tablet`
     margin-bottom: 80px;
   `}

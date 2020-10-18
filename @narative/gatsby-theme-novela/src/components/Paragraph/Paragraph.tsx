@@ -3,9 +3,9 @@ import mediaqueries from "@styles/media";
 
 const Paragraph = styled.p`
   line-height: 1.556;
-  font-size: 16px;
+  font-size: 18px;
   color: ${p => p.theme.colors.articleText};
-  font-family: ${p => p.theme.fonts.body};
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
   transition: ${p => p.theme.colorModeTransition};
   margin: 0 auto 35px;
   width: 100%;

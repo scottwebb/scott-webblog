@@ -7,7 +7,9 @@ import SocialLinks from "@components/SocialLinks";
 
 import mediaqueries from "@styles/media";
 
-const image = '/scott-webb-photographer.jpg';
+const image = './images/process_thumb.jpg';
+const imageB = './images/portfolio_thumb.jpg';
+const imageC = './images/for_photographers_thumb.jpg';
 
 const siteQuery = graphql`
   {
@@ -56,8 +58,8 @@ const Footer: React.FC<{}> = () => {
         
         <ContentContainer>
           <MyImage><a href="/"><Image src={image} alt="Scott Webb, Photographer"/></a></MyImage>
-          <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
-          <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
+          <MyImage><Image src={imageB} alt="Scott Webb, Photographer"/></MyImage>
+          <MyImage><Image src={imageC} alt="Scott Webb, Photographer"/></MyImage>
         </ContentContainer>
       
         <FooterContainer>
@@ -158,7 +160,6 @@ const MyImage = styled.div`
   position: relative;
   display: block;
   width: 100%;
-  box-shadow: 0 22px 44px 0 rgba(0,0,0,0.22);
   margin-bottom: 5px;
 
   img {
@@ -168,5 +169,9 @@ const MyImage = styled.div`
     object-position: center;
     background: #fff;
 
+  }
+
+  img:hover {
+    box-shadow: 0 22px 44px 0 rgba(0,0,0,0.22);
   }
 `;

@@ -218,10 +218,11 @@ const InfoHeading = styled.h1`
 `;
 
 const InfoText = styled.p`
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
   margin-top: 24px;
   line-height: 1.7;
-  color: ${p => p.theme.colors.grey};
+  color: ${p => p.theme.colors.primary};
 
   a {
     color: ${p => p.theme.colors.primary};

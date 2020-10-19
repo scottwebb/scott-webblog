@@ -57,9 +57,9 @@ const Footer: React.FC<{}> = () => {
         <HoritzontalRule />
         
         <ContentContainer>
-          <MyImage><a href="/"><Image src={image} alt="Scott Webb, Photographer"/></a></MyImage>
-          <MyImage><Image src={imageB} alt="Scott Webb, Photographer"/></MyImage>
-          <MyImage><Image src={imageC} alt="Scott Webb, Photographer"/></MyImage>
+          <MyImage><a href="/"><Image src={image} title="" alt="Scott Webb, Photography Process for Projects"/></a></MyImage>
+          <MyImage><Image src={imageB} title="View Architectural Photography Portfolio" alt="View Architectural Photography Portfolio"/></MyImage>
+          <MyImage><Image src={imageC} title="For Photographers" alt="Secion for photographers to go to"/></MyImage>
         </ContentContainer>
       
         <FooterContainer>

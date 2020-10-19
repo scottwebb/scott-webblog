@@ -77,8 +77,8 @@ const NavigationHeader: React.FC<{}> = () => {
         <LogoLink
           to={rootPath || basePath}
           data-a11y="false"
-          title="Navigate back to the homepage"
-          aria-label="Navigate back to the homepage"
+          title="Navigate back to the homepage and portfolio"
+          aria-label="Navigate back to the homepage and portfolio"
           back={showBackArrow ? "true" : "false"}
         >
           {showBackArrow && (
@@ -87,7 +87,7 @@ const NavigationHeader: React.FC<{}> = () => {
             </BackArrowIconContainer>
           )}
           <Logo fill={fill} />
-          <Hidden>Navigate back to the homepage</Hidden>
+          <Hidden>Navigate back to the homepage and portfolio</Hidden>
         </LogoLink>
         <NavControls>
           <NavLink to={`/writing`} title={`All articles`} activeClassName="active" >
@@ -97,7 +97,10 @@ const NavigationHeader: React.FC<{}> = () => {
             About
           </NavLink>
           <NavLink to={`/`} title={`View Portfolio`} activeClassName="active" >
-            Portfolio
+            Work
+          </NavLink>
+          <NavLink to={`/contact`} title={`Contact Scott`} activeClassName="active" >
+            Contact
           </NavLink>
           
           <DarkModeToggle />

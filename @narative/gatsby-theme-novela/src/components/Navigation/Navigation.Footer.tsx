@@ -7,9 +7,9 @@ import SocialLinks from "@components/SocialLinks";
 
 import mediaqueries from "@styles/media";
 
-const image = './images/process_thumb.jpg';
-const imageB = './images/portfolio_thumb.jpg';
-const imageC = './images/for_photographers_thumb.jpg';
+const image = '/process_thumb.jpg';
+const imageB = '/portfolio_thumb.jpg';
+const imageC = '/for_photographers_thumb.jpg';
 
 const siteQuery = graphql`
   {

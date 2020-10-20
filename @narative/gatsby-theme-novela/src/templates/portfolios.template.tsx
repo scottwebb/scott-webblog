@@ -53,6 +53,8 @@ const PortfoliosPage: Template = ({ location, pageContext }) => {
         <h2>
         Scott Webb Photography helps architects, designers, engineers, builders, developers and other businesses to elevate the experience of built projects through creative and authentic architectural photography
         </h2>
+        <h2>———</h2>
+        <h3>Architectural Photography Galleries</h3>
         </SidekickText>
       </ImageContainerHome>
         <PortfolioList articles={portfolio} />
@@ -98,7 +100,7 @@ const ImageContainerHome = styled.div`
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 75px;
+  margin-bottom: 35px;
 
   img {
     width: 100%;
@@ -113,17 +115,19 @@ const ImageContainerHome = styled.div`
 const SidekickText = styled.div`
 position: relative;
 font-style: normal;
-  font-weight: 600;
-  font-size: 44px;
+  font-weight: 400;
+  font-size: 34px;
   line-height: 1.1;
   color: ${p => p.theme.colors.primary};
 width: 100%;
 display: block;
-text-align: right;
-padding: 10rem 0px 3rem 12rem;
+text-align: center;
+padding: 5rem;
 
-h4 {
-  padding: 2rem 0;
+h2 {
+
+  font-weight: 400!important;
+  padding: 2rem 0 3rem;
 }
 
   a {
@@ -132,11 +136,14 @@ h4 {
   }
 
   ${mediaqueries.desktop`
-    font-size: 30px
+  padding: 2rem 0 0 1rem;
+    font-size: 21px;
   `}
 
   ${mediaqueries.phablet`
-    font-size: 22px;
+
+font-weight: 400!important;
+    font-size: 18px;
   `}
 `;
 

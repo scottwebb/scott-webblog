@@ -119,7 +119,7 @@ const ContentContainer = styled.div`
   z-index: 1;
 
   ${mediaqueries.desktop`
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   `}
 `;
 

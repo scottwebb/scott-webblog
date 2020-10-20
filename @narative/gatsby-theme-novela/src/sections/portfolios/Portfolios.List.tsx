@@ -264,12 +264,24 @@ const TextContainer = styled.div`
   top: 450px;
   padding: 48px 40px;
 
+  ${mediaqueries.desktop`
+  top: 310px;
+    margin-bottom: 15px;
+  `}
+
 
   ${mediaqueries.phablet`
+  top: 310px;
+    padding: 40px 32px;
+    width: 360px;
+  `}
+
+${mediaqueries.tablet`
   top: 275px;
     padding: 40px 32px;
     width: 360px;
   `}
+
 `;
 
 const ContentContainer = styled.div`

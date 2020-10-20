@@ -12,6 +12,7 @@ import { Template } from "@types";
 import { Link } from "gatsby";
 
 const image = '/scott-webb-photographer.jpg';
+const image_b = '/images/scott-webb-architectural-photographer-oct-25-at-work-2019.jpg';
 
 const AboutPage: Template = ({ location, pageContext }) => {
 
@@ -94,12 +95,11 @@ const AboutPage: Template = ({ location, pageContext }) => {
             </InfoText>
           
           </MyText>
-          <MyImage><Image src={image} alt="Scott Webb, Photographer"/></MyImage>
+          <MyImage><Image src={image_b} title="Scott Webb" alt="Scott Webb taking photos on location"/></MyImage>
         </ContentContainer_b>
       </Section>
       <Section>
         <ContentContainer_c>
-        <ResponsivePlayer url="https://cdn.dribbble.com/users/43342/screenshots/14154626/media/3e370f2b0684713d2bd0f60e312a4057.mp4" />
         </ContentContainer_c>
       </Section>
       <ArticlesGradient />

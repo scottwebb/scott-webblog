@@ -54,7 +54,10 @@ const PortfoliosHero: React.FC<IAuthor> = ({ authors }) => {
 export default PortfoliosHero;
 
 const HeadingContainer = styled.div`
-  margin: 100px 0;
+  margin: 100px 0 -150px;
+  position: relative;
+  padding-left: 10rem;
+  z-index: 1;
   font-family: ${p => p.theme.fonts.title};
 
   ${mediaqueries.desktop`

@@ -29,7 +29,7 @@ const siteQuery = graphql`
   }
 `;
 
-const image = '/architectural-photographer-london-ontario-portfolioHero-1.jpg';
+const image = '/architectural-photographer-london-ontario-portfolioHero-1b.jpg';
 
 const PortfoliosPage: Template = ({ location, pageContext }) => {
   const portfolio = pageContext.group;

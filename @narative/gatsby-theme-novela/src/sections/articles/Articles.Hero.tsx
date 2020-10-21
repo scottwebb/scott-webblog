@@ -101,10 +101,10 @@ const HeroHeading = styled.h1`
   }
 
   ${mediaqueries.desktop`
-    font-size: 38px
+    font-size: 34px
   `}
 
   ${mediaqueries.phablet`
-    font-size: 54px;
+    font-size: 24px;
   `}
 `;

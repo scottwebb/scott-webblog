@@ -3,7 +3,7 @@ require("dotenv").config();
 const siteMetadata = {
   title: `Scott Webb Photography | London Ontario Architectural Photographer`,
   name: `Scott Webb`,
-  siteUrl: `https://wwww.scottwebb.me`,
+  siteUrl: `https://www.scottwebb.me`,
   description: `London Ontario Architectural Photographer creating beautiful architectural photography for architects, designers, developers.`,
   hero: {
     heading: `An Architectural Photographer for visionary studios & firms doing remarkable work in London and Southwestern Ontario`,
